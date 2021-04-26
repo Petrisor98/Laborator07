@@ -13,15 +13,18 @@ public class LandmarkInformation {
     public LandmarkInformation() {
         this.latitude = 0.0d;
         this.longitude = 0.0d;
-        this.toponymName = new String();
+        this.toponymName = "";
         this.population = 0;
-        this.codeName = new String();
-        this.name = new String();
-        this.wikipediaWebPageAddressName = new String();
-        this.countryCode = new String();
+        this.codeName = "";
+        this.name = "";
+        this.wikipediaWebPageAddressName = "";
+        this.countryCode = "";
     }
 
-    public LandmarkInformation(double latitude, double longitude, String toponymName, long population, String codeName, String name, String wikipediaWebPageAddressName, String countryCode) {
+    public LandmarkInformation(double latitude, double longitude,
+                               String toponymName, long population,
+                               String codeName, String name,
+                               String wikipediaWebPageAddressName, String countryCode) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.toponymName = toponymName;

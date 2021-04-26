@@ -27,7 +27,7 @@ public class LandmarkInformationAdapter extends BaseAdapter {
         TextView nameTextView;
         TextView wikipediaWebPageAddressTextView;
         TextView countryCodeTextView;
-    };
+    }
 
     public LandmarkInformationAdapter(Context context, List<LandmarkInformation> content) {
         this.context = context;
@@ -60,14 +60,14 @@ public class LandmarkInformationAdapter extends BaseAdapter {
         if (convertView == null) {
             view = layoutInflater.inflate(R.layout.landmark_information, parent, false);
             landmarkInformationViewHolder = new LandmarkInformationViewHolder();
-            landmarkInformationViewHolder.latitudeTextView = (TextView)view.findViewById(R.id.latitude_text_view);
-            landmarkInformationViewHolder.longitudeTextView = (TextView)view.findViewById(R.id.longitude_text_view);
-            landmarkInformationViewHolder.toponymNameTextView = (TextView)view.findViewById(R.id.toponym_name_text_view);
-            landmarkInformationViewHolder.populationTextView = (TextView)view.findViewById(R.id.population_text_view);
-            landmarkInformationViewHolder.codeNameTextView = (TextView)view.findViewById(R.id.code_name_text_view);
-            landmarkInformationViewHolder.nameTextView = (TextView)view.findViewById(R.id.name_text_view);
-            landmarkInformationViewHolder.wikipediaWebPageAddressTextView = (TextView)view.findViewById(R.id.wikipedia_web_page_address_text_view);
-            landmarkInformationViewHolder.countryCodeTextView= (TextView)view.findViewById(R.id.country_code_text_view);
+            landmarkInformationViewHolder.latitudeTextView = view.findViewById(R.id.latitude_text_view);
+            landmarkInformationViewHolder.longitudeTextView = view.findViewById(R.id.longitude_text_view);
+            landmarkInformationViewHolder.toponymNameTextView = view.findViewById(R.id.toponym_name_text_view);
+            landmarkInformationViewHolder.populationTextView = view.findViewById(R.id.population_text_view);
+            landmarkInformationViewHolder.codeNameTextView = view.findViewById(R.id.code_name_text_view);
+            landmarkInformationViewHolder.nameTextView = view.findViewById(R.id.name_text_view);
+            landmarkInformationViewHolder.wikipediaWebPageAddressTextView = view.findViewById(R.id.wikipedia_web_page_address_text_view);
+            landmarkInformationViewHolder.countryCodeTextView= view.findViewById(R.id.country_code_text_view);
             view.setTag(landmarkInformationViewHolder);
         } else {
             view = convertView;
